@@ -2,6 +2,7 @@ class Node:
     def __init__(self, data):
         self.data = data  # Value of the node
         self.next = None  # Pointer to the next node
+        
     @staticmethod
     def display(node):
         current = node

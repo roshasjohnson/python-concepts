@@ -3,8 +3,8 @@ class Node:
         self.data = data  # Value of the node
         self.next = None  # Pointer to the next node
         
-    @staticmethod
-    def display(node):
+    # @staticmethod
+    def display(self,node):
         current = node
         while current:
             print(current.data, end=" -> ")
@@ -16,8 +16,8 @@ node2 = Node(2)
 node3 = Node(3)
 node1.next = node2
 node2.next = node3
-
-Node.display(node1)
+node2.display(node1)
+node3.display(node1)
 
 
 
